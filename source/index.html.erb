@@ -1,0 +1,26 @@
+---
+title: home
+pageable: true
+per_page: 10
+---
+
+<div class="wrap clearfix">
+
+  <div class="page-header-wrap">
+    <header class="page-header" role="banner">
+      <h1 class="page-header-title"><%= data.site.title %></h1>
+      <h2 class="page-header-subtitle"><%= data.site.description %></h2>
+    </header>
+  </div>
+
+  <section role="main" class="main">
+    <% blog.articles.each do |article| %>
+    <article class="entry">
+      <h1 class="entry-title"><%= article.title %></h1>
+      <p class="entry-date"><%= article.date.strftime('%e %B %Y') %></p>
+      <%= article.body %>
+    </article>
+    <% end %>
+  </section>
+
+</div><!-- .wrap -->

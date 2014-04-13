@@ -1,0 +1,88 @@
+
+body {
+  background-color: #fff;
+  color: $bodyColor;
+  font: 400 16px/1.5em $bodyFont;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  outline: none;
+}
+
+a:link {
+  color: $linkColor;
+}
+
+a:visited {
+  color: $linkVisitedColor;
+}
+
+a:hover,
+a:active {
+  color: $linkHoverColor;
+}
+
+a:focus {
+  outline: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $borderColor;
+  margin: 2em 0;
+}
+
+
+// Images (shouldn't expand beyond parents)
+// -------------------------
+
+img {
+  max-width: 100%;
+}
+
+
+// Headings
+// ----------------
+h1 {
+  font: 400 2em/1.5em $bodyFont;
+}
+h2 {
+  font: 400 1.5em/1.5em $bodyFont;
+}
+h3 {
+  font-size: 1.25em; // 20/16
+}
+h4 {
+  font: 400 1.125em/1.5em $bodyFont; // 18/16
+}
+
+
+// Common Typography
+// ----------------
+
+.list {
+  padding: 0 0 0 1.3em; // zero runs into grid gutters
+
+  li {
+    list-style-type: square;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+
+// States
+// --------------------
+.is-hidden,
+.on-mobile {
+  display: none;
+}
+
+.is-visible {
+  display: block;
+}

@@ -1,0 +1,30 @@
+
+// Sticky Footer
+// -------------------------
+
+$footerHeight: 48px;
+
+html,
+body {
+  height: 100%;
+}
+
+.site-content-wrapper {            // wrapper for page content to push down footer
+  min-height: 100%;
+  // height: auto !important; // min-height hack for IE6, remove?
+  // height: 100%;
+  margin: 0 auto $footerHeight*-1; //negative indent footer by it's height
+}
+.site-push-footer {
+  height: $footerHeight;
+}
+.site-footer {
+  background-color: #ccc;
+  height: $footerHeight;
+}
+.lt-ie9 {
+  .site-footer {
+    margin-bottom: $footerHeight * -1;
+  }
+}
+

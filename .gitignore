@@ -1,0 +1,19 @@
+# Ignore used config
+data/site.yml
+
+# Ignore Mac Finder file
+.DS_Store
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the build directory
+/build
+
+# Ignore Sass
+*.sass-cache
+
+*.gem
+*.rbc
+.bundle
+.config

@@ -1,0 +1,40 @@
+$navHeight: 75px;
+
+
+.header-logo {
+  font-size: 2em;
+  height: $navHeight;
+  line-height: $navHeight;
+}
+
+.header-nav {
+
+}
+
+
+.nav-container {
+  background-color: #ccc;
+  height: $navHeight;
+}
+
+.nav-list {
+  text-align: right;
+  height: $navHeight;
+  line-height: $navHeight;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  display: inline-block;
+  @include ie7-inline-block;
+  margin-left: 1em;
+}
+
+
+// Responsive navigation
+
+// @media screen and (max-width: 480px) {
+
+// }
